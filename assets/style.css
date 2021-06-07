@@ -45,3 +45,10 @@ li {
 #about {
   display: none;
 }
+
+#back {
+  display: none;
+  color: yellow;
+  margin-top: 8px;
+  cursor: pointer;
+}
