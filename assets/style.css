@@ -1,27 +1,25 @@
 html {
-  background: blue;
+    background: blue;
 }
 
 * {
-  padding: 0;
-  margin: 0;
-  font-family: 'Staatliches', cursive;
-  color: white;
+    padding: 0;
+    margin: 0;
+    font-family: 'Staatliches', cursive;
+    color: white;
 }
 
 body {
-
     height: 100vh;
     background: url(/assets/1.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.container {
+.main {
     height: 100vh;
     background: #00000080;
     position: relative;
-
 }
 
 .content {
@@ -32,25 +30,25 @@ body {
 }
 
 ul {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 li {
-  display: inline-block;
-  padding: 7px;
-  cursor: pointer;
+    display: inline-block;
+    padding: 7px;
+    cursor: pointer;
 }
 
 #about {
-  display: none;
+    display: none;
 }
 
 #back {
-  display: none;
-  color: yellow;
-  margin-top: 8px;
-  cursor: pointer;
+    display: none;
+    color: yellow;
+    margin-top: 8px;
+    cursor: pointer;
 }
 
 .footer {
@@ -68,4 +66,19 @@ li {
     text-align: left;
     padding-left: 15px;
     padding-top: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        font-size: 15px !important;
+    }
+    .content {
+        font-size: 15px !important;
+    }
+    .header {
+        font-size: 15px;
+    }
+    .footer {
+        font-size: 11px;
+    }
 }
