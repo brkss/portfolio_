@@ -117,6 +117,7 @@ li {
     font-weight: bold;
     border-bottom: 3px solid white;
     resize: none;
+    border-radius: 0;
 }
 
 .inp-contact:focus {
