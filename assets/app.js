@@ -7,7 +7,8 @@ const links = {
 const pages = {
     home: document.getElementById('home'),
     about: document.getElementById('about'),
-    projects: document.getElementById('projects')
+    projects: document.getElementById('projects'),
+    contact: document.getElementById('contact'),
 }
 
 
@@ -16,21 +17,34 @@ links.home.addEventListener('click', () => {
     links.home.style.display = 'none'
     pages.about.style.display = 'none'
     pages.projects.style.display = 'none'
+    pages.contact.style.display = 'none';
     pages.home.style.display = 'block'
+
 });
 
+// navigate to about
 links.about.addEventListener('click', () => {
     console.log('you clicked about')
     links.home.style.display = 'block'
     pages.home.style.display = 'none';
     pages.about.style.display = 'block';
+
 });
 
+// navigate to projects
 links.projects.addEventListener('click', () => {
     console.log('you clicked projects')
     links.home.style.display = 'block'
     pages.home.style.display = 'none';
     pages.projects.style.display = 'block';
+});
+
+//navigate to contact
+links.contact.addEventListener('click', () => {
+    console.log('you clicked contact')
+    links.home.style.display = 'block'
+    pages.home.style.display = 'none';
+    pages.contact.style.display = 'block';
 });
 
 console.log('links => ', links);

@@ -49,6 +49,10 @@ li {
     display: none;
 }
 
+#contact {
+    display: none;
+}
+
 #back {
     display: none;
     color: yellow;
@@ -94,6 +98,11 @@ li {
 
 .project-title {
     font-size: 17px;
+}
+
+.project-desc {
+    opacity: .8;
+    font-size: 15px;
 }
 
 @media only screen and (max-width: 768px) {
