@@ -27,6 +27,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    width: 400px;
 }
 
 ul {
@@ -41,6 +42,10 @@ li {
 }
 
 #about {
+    display: none;
+}
+
+#projects {
     display: none;
 }
 
@@ -68,12 +73,36 @@ li {
     padding-top: 5px;
 }
 
+
+/* project */
+
+.project-element {
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 12px;
+    margin-top: 5px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.project-element:hover {
+    text-decoration: none;
+    background: #ffd70029;
+    transition: .3s;
+}
+
+.project-title {
+    font-size: 17px;
+}
+
 @media only screen and (max-width: 768px) {
     .main {
         font-size: 15px !important;
     }
     .content {
         font-size: 15px !important;
+        width: 80%;
     }
     .header {
         font-size: 15px;
